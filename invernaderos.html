@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/invernaderos.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./funciones/axios.js"></script>
+    <script defer src="./funciones/invernadero.js"></script>
+    <div class="navbar">
+        <a href="index.html" class="title">InvernaderoIOT</a>
+    </div>
+    
+    <div class="banner">    
+        <div class="encabezado">
+            <h1>Tomates</h1>
+
+            <div class="dato">
+                <p class="clase">Temperatura:</p>
+                <p>Dato</p>
+            </div>
+
+            <div class="dato">
+                <p class="clase">Humedad:</p>
+                <p>Dato</p>
+            </div>
+
+            <div class="dato">
+                <p class="clase">Luz:</p>
+                <p>Dato</p>
+            </div>  
+        </div>    
+        <img src="https://blush-design.imgix.net/collections/humaaans/v30/Master/Composition/cropped/Plants.svg?w=500&auto=compress&cs=srgb">
+    </div>
+
+    <div class="funcionalidades">
+        <p class="titulo">Funcionalidades</p>
+        <div class="funciones">
+
+            <div class="funcion-1">
+                <p class="funcionalidad">Ventilador</p>
+                <p>Estado</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+    
+            <div class="funcion-1">
+                <p class="funcionalidad">Lámparas</p>
+                <p>Estado</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+    
+            <div class="funcion-1">
+                <p class="funcionalidad">Rociadores</p>
+                <p>Estado</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+        </div>
+    </div>
+    <div class="tabla" id="contenedor">
+        <p class="titulo">Datos</p>
+        <table>
+            <thead> 
+                <tr>
+                    <th>Fecha</th>
+                    <th>Tem</th>
+                    <th>Lum</th>
+                    <th>Hum</th>
+                </tr>
+            </thead>
+            <tbody id="datos">
+                <!--Dato Nuevo-->
+                
+                <tr id="fecha">
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                </tr>
+
+                <tr id="temp">
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                </tr>
+
+                <tr id="lum">
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                    <td>Nuevo Dato</td>
+                </tr>
+
+                <tr id="hum">
+                    <td>paco</td>
+                    <td>pepe</td>
+                    <td>lucia</td>
+                    <td>Nuevo Dato</td>
+                </tr>
+                
+
+
+            </tbody>
+        </table>
+    </div>
+        
+        
+    <div class="footer">
+        <div class="col1">
+           <h4>InvernaderoIOT</h4>
+           <h2>El control de tu invernadero <br>   en tus manos.</h2>
+        </div>
+        <div class="item1">
+            <div class="col2">
+                <h4>Contacto</h4>
+                <p>IOTInverdaeros</p>
+                <p>+52 271 000 0000</p>
+                <p>iotinverna@gmail.com</p>
+            </div>
+            <div class="col3">
+                <h4>Tecnologias</h4>
+                <p>IOTInvernaderos</p>
+                <p>Reportar Quejas</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
