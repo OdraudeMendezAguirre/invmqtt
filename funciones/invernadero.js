@@ -1,10 +1,8 @@
+
 class Invernadero{
     venti="Apagado";
     lamp="Apagado";
     roci="Apagado";
-    datosLuminosidad= [];
-    datosTemperatura = [];
-    datosHumedad = [];
     estadoR=false;
     estadoV=false;
     estadoL=false;
@@ -32,4 +30,6 @@ class Invernadero{
       this.venti="Apagado";
     }
   }
+
+  //llenado de tabla
 }
