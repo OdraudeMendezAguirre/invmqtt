@@ -9,7 +9,6 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script defer src="./funciones/invernadero.js"></script>
     <script src="./funciones/axios.js"></script>
     
     <div class="navbar">
@@ -22,17 +21,17 @@
 
             <div class="dato">
                 <p class="clase">Temperatura:</p>
-                <p>Dato</p>
+                <p id="label-temperatura">...</p>
             </div>
 
             <div class="dato">
                 <p class="clase">Humedad:</p>
-                <p>Dato</p>
+                <p id="label-humedad">...</p>
             </div>
 
             <div class="dato">
                 <p class="clase">Luz:</p>
-                <p>Dato</p>
+                <p id="label-luminosidad">...</p>
             </div>  
         </div>    
         <img src="https://blush-design.imgix.net/collections/humaaans/v30/Master/Composition/cropped/Plants.svg?w=500&auto=compress&cs=srgb">
@@ -44,27 +43,27 @@
 
             <div class="funcion-1">
                 <p class="funcionalidad">Ventilador</p>
-                <p>Estado</p>
+                <p id="estado-ventilador">Estado</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="btn-ventilador">
                     <span class="slider round"></span>
                   </label>
             </div>
     
             <div class="funcion-1">
                 <p class="funcionalidad">Lámparas</p>
-                <p>Estado</p>
+                <p id="estado-lampara">Estado</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="btn-lampara">
                     <span class="slider round"></span>
                   </label>
             </div>
     
             <div class="funcion-1">
                 <p class="funcionalidad">Rociadores</p>
-                <p>Estado</p>
+                <p id="estado-rociador">Estado</p>
                 <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" id="btn-rociador">
                     <span class="slider round"></span>
                   </label>
             </div>
@@ -99,7 +98,8 @@
                 <p>Reportar Quejas</p>
             </div>
         </div>
-        
     </div>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="./funciones/invernadero1.js"></script>
 </body>
 </html>
