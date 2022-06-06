@@ -20,7 +20,7 @@ const options = {
 };
   
 //Constante para url API ubidots CAMBIE LOS DATOS POR SU TOKEN PERSONAL
-const brokerURL = "ws://localhost:8083/mqtt";
+const brokerURL = "ws://34.125.103.25:8083/mqtt";
 
 //Eventos WS de MQTT
 const client = mqtt.connect(brokerURL, options);
